@@ -207,7 +207,7 @@ RUN echo "/bin/bash" >> /startkali.sh
 # expose the right ports and set the entrypoint
 # ###########################################################
 
-EXPOSE ${SSH_PORT} ${RDP_PORT} ${VNC_PORT}
+EXPOSE ${SSH_PORT} ${RDP_PORT} ${VNC_PORT} 444 555 666 777 888 999
 WORKDIR "/root"
 ENTRYPOINT ["/bin/bash"]
 CMD ["/startkali.sh"]
